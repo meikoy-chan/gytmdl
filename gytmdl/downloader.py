@@ -78,7 +78,7 @@ class Downloader:
             else:
                 extractor_args["po_token"] = [f"web_music.gvs+{self.po_token}"]
         else:
-            extractor_args["player_client"] = ["web_music"]
+            extractor_args["player_client"] = ["tv"]
         self.ytdlp_options = {
             "quiet": True,
             "no_warnings": True,
