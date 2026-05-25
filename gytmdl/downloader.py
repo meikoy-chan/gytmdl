@@ -76,9 +76,9 @@ class Downloader:
             if self.po_token is None:
                 extractor_args["formats"] = ["missing_pot"]
             else:
-                extractor_args["po_token"] = [self.po_token]
+                extractor_args["po_token"] = [f"web_music.gvs+{self.po_token}"]
         else:
-            extractor_args["player_client"] = ["tv"]
+            extractor_args["player_client"] = ["web_music"]
         self.ytdlp_options = {
             "quiet": True,
             "no_warnings": True,
